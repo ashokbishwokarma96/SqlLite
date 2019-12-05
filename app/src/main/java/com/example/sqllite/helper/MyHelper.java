@@ -23,7 +23,7 @@ public class MyHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db = getWritableDatabase();
+
 
         String query = "CREATE TABLE " + tbl_word +
                 "("

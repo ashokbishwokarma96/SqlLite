@@ -26,13 +26,14 @@ public class MainActivity extends AppCompatActivity {
         buttonAddWord = findViewById(R.id.buttonAddWord);
 
 
-       // final SQLiteDatabase sqLiteDatabase =myHelper.getWritableDatabase();
+
 
 
         buttonAddWord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final MyHelper myHelper =new MyHelper(MainActivity.this);
+                final SQLiteDatabase sqLiteDatabase =myHelper.getWritableDatabase();
             }
         });
 
